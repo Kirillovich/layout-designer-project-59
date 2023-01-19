@@ -35,19 +35,19 @@
       }
    }
 
-   .chat {
-      &-sidebar {
-         &__content {
-            &:not(#chats) {
-               display: none;
-            }
-         }
-      }
-   }
+   // .chat {
+   //    &-sidebar {
+   //       &__content {
+   //          &:not(#chats) {
+   //             display: none;
+   //          }
+   //       }
+   //    }
+   // }
 
-   #chats.chat-sidebar__content {
-      display: flex;
-   }
+   // #chats.chat-sidebar__content {
+   //    display: flex;
+   // }
 
    .chat-content {
       justify-content: flex-start;

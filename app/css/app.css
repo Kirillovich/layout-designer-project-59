@@ -38,14 +38,11 @@
   padding: 16px 32px 16px 16px;
 }
 .chat-sidebar__content {
-  display: flex;
+  display: none;
   flex-direction: column;
   overflow: hidden;
   padding: 48px 24px;
   height: 100%;
-}
-.chat-sidebar__content:not(#contacts) {
-  display: none;
 }
 .chat-sidebar__contacts {
   overflow-y: auto;
@@ -102,6 +99,10 @@
   flex-direction: column;
 }
 
+#contacts.chat-sidebar__content {
+  display: flex;
+}
+
 #chat .dialog {
   flex-grow: 1;
   display: flex;
@@ -132,12 +133,6 @@
   line-height: 21px;
   color: #6C757D;
   font-weight: normal;
-}
-#chat .chat-sidebar__content:not(#chats) {
-  display: none;
-}
-#chat #chats.chat-sidebar__content {
-  display: flex;
 }
 #chat .chat-content {
   justify-content: flex-start;

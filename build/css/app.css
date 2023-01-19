@@ -141,6 +141,9 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
+#chat [href="#current-chat"] {
+  display: none;
+}
 
 *,
 *::after,

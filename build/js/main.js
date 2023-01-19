@@ -22,13 +22,15 @@ window.onload = function () {
       idChats.style.display = 'none';
    }
 
-   if (location.hash === '#current-chat' || href.indexOf('#') === -1) {
+   if ((location.hash === '#current-chat' || href.substring(href.length - 9) === 'chat.html') && widthWindow < 1000) {
       currentChat.style.display = 'flex';
-      idChats.style.display = 'none';
-
       currentChat.style.height = '0';
       chatSidebar.style.flexBasis = '0';
       chat.style.flexDirection = 'column-reverse';
+
+      idProfile.style.display = 'none';
+      idChats.style.display = 'none';
+      idContacts.style.display = 'none';
    } else {
       chatSidebar.style.flexBasis = '100%';
       chat.style.flexDirection = 'initial';

@@ -1,0 +1,27 @@
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   &__menu {
+      display: flex;
+   }
+
+   &__btn {
+      display: flex;
+      align-items: center;
+      color: $light;
+      font-size: 14px;
+      line-height: 21px;
+      text-decoration: none;
+
+      &:not(:last-child) {
+         margin-right: 32px;
+      }
+
+      img {
+         display: inline-block;
+         margin-right: 8px;
+      }
+   }
+}

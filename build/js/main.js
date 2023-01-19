@@ -15,10 +15,19 @@ window.onload = function () {
    if (location.hash === '#contacts') {
       idContacts.style.display = 'flex';
       idChats.style.display = 'none';
+      idProfile.style.display = 'none';
    } else if (location.hash === '') {
       idChats.style.display = 'flex';
    } else if (location.hash === '#profile') {
       idProfile.style.display = 'flex';
+      idChats.style.display = 'none';
+      idContacts.style.display = 'none';
+   } else if (location.hash === '#chats') {
+      idContacts.style.display = 'none';
+   }
+
+   if (location.hash === '' && href.substring(href.length - 9) !== 'chat.html') {
+      idProfile.style.display = 'none';
       idChats.style.display = 'none';
    }
 

@@ -24,10 +24,6 @@
          overflow: hidden;
          padding: 48px 24px;
          height: 100%;
-
-         // &:not(#contacts) {
-         //    display: none;
-         // }
       }
 
       &__contacts {
@@ -97,4 +93,10 @@
 
 #chats.chat-sidebar__content {
    display: flex;
+}
+
+#index {
+   #contacts.chat-sidebar__content {
+      display: flex;
+   }
 }

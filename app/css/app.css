@@ -103,6 +103,10 @@
   display: flex;
 }
 
+#index #contacts.chat-sidebar__content {
+  display: flex;
+}
+
 #chat .dialog {
   flex-grow: 1;
   display: flex;

@@ -1,86 +1,62 @@
 window.onload = function () {
-   // history.pushState('', document.title, window.location.pathname);
-
-   const href = location.href;
-
-   const widthWindow = document.documentElement.clientWidth;
-
-   const idChats = document.querySelector('#chats.chat-sidebar__content');
+   const idAll = document.querySelectorAll('.chat-sidebar__content');
    const idContacts = document.querySelector('#contacts.chat-sidebar__content');
-   const idProfile = document.querySelector('#profile.chat-sidebar__content');
-   const currentChat = document.querySelector('.chat-content');
+   const idChats = document.querySelector('#chats.chat-sidebar__content');
+   // const idProfile = document.querySelector('#profile.chat-sidebar__content');
+   const chatContent = document.querySelector('.chat-content');
    const chatSidebar = document.querySelector('.chat-sidebar');
    const chat = document.querySelector('.chat');
 
-   if (location.hash === '#contacts') {
+   const makeIdVisible = () => {
+      for (id of idAll) {
+         if (`#${id.getAttribute('id')}` === location.hash) {
+            id.style.display = 'flex';
+         } else {
+            id.style.display = 'none';
+         }
+      }
+
+      if (document.documentElement.clientWidth < 1000) {
+         if (location.hash === '#current-chat') {
+            chatContent.style.display = 'flex';
+            chat.style.flexDirection = 'column-reverse';
+            chatSidebar.style.flexBasis = '0';
+            chatContent.style.height = '0';
+         } else {
+            chatContent.style.display = 'none';
+         }
+      }
+
+      if (document.documentElement.clientWidth > 1000) {
+         chat.style.flexDirection = 'initial';
+         chatSidebar.style.flexBasis = '464px';
+         chatContent.style.height = 'initial';
+      }
+
+      // window.addEventListener(
+      //    'resize',
+      //    function (event) {
+      //       const widthWindow = document.documentElement.clientWidth;
+      //    },
+      //    true,
+      // );
+   };
+
+   makeIdVisible();
+
+   if (location.pathname === '/' && location.hash === '') {
       idContacts.style.display = 'flex';
-      idChats.style.display = 'none';
-      idProfile.style.display = 'none';
-   } else if (location.hash === '') {
+   }
+
+   if (location.pathname === '/chat.html' && location.hash === '') {
       idChats.style.display = 'flex';
-   } else if (location.hash === '#profile') {
-      idProfile.style.display = 'flex';
-      idChats.style.display = 'none';
-      idContacts.style.display = 'none';
-   } else if (location.hash === '#chats') {
-      idContacts.style.display = 'none';
-   }
-
-   if (location.hash === '' && href.substring(href.length - 9) !== 'chat.html') {
-      idProfile.style.display = 'none';
-      idChats.style.display = 'none';
-   }
-
-   if ((location.hash === '#current-chat' || href.substring(href.length - 9) === 'chat.html') && widthWindow < 1000) {
-      currentChat.style.display = 'flex';
-      currentChat.style.height = '0';
-      chatSidebar.style.flexBasis = '0';
-      chat.style.flexDirection = 'column-reverse';
-
-      idProfile.style.display = 'none';
-      idChats.style.display = 'none';
-      idContacts.style.display = 'none';
-   } else {
-      chatSidebar.style.flexBasis = '100%';
-      chat.style.flexDirection = 'initial';
-      currentChat.style.height = 'initial';
    }
 
    window.addEventListener('hashchange', hashchange);
 
    function hashchange() {
-      const hash = location.hash;
-
-      if (hash === '#contacts') {
-         idContacts.style.display = 'flex';
-         idChats.style.display = 'none';
-         idProfile.style.display = 'none';
-         widthWindow < 1000 ? (currentChat.style.display = 'none') : null;
-      } else if (hash === '#chats') {
-         idChats.style.display = 'flex';
-         idContacts.style.display = 'none';
-         idProfile.style.display = 'none';
-         widthWindow < 1000 ? (currentChat.style.display = 'none') : null;
-      } else if (hash === '#profile') {
-         idProfile.style.display = 'flex';
-         idChats.style.display = 'none';
-         idContacts.style.display = 'none';
-         widthWindow < 1000 ? (currentChat.style.display = 'none') : null;
-      }
-
-      if (hash === '#current-chat') {
-         currentChat.style.display = 'flex';
-         currentChat.style.height = '0';
-         chatSidebar.style.flexBasis = '0';
-         chat.style.flexDirection = 'column-reverse';
-
-         idProfile.style.display = 'none';
-         idChats.style.display = 'none';
-         idContacts.style.display = 'none';
-      } else {
-         chatSidebar.style.flexBasis = '100%';
-         chat.style.flexDirection = 'initial';
-         currentChat.style.height = 'initial';
-      }
+      makeIdVisible();
    }
 };
+
+// history.pushState('', document.title, window.location.pathname);

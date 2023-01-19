@@ -1,6 +1,7 @@
 window.onload = function () {
    // history.pushState('', document.title, window.location.pathname);
-   // console.log(location.hash);
+
+   const href = location.href;
 
    const widthWindow = document.documentElement.clientWidth;
 
@@ -13,17 +14,17 @@ window.onload = function () {
 
    if (location.hash === '#contacts') {
       idContacts.style.display = 'flex';
-   } else if (location.hash === '#chats') {
+      idChats.style.display = 'none';
+   } else if (location.hash === '') {
       idChats.style.display = 'flex';
-      idContacts.style.display = 'none';
    } else if (location.hash === '#profile') {
       idProfile.style.display = 'flex';
-      idContacts.style.display = 'none';
+      idChats.style.display = 'none';
    }
 
-   if (location.hash === '#current-chat') {
+   if (location.hash === '#current-chat' || href.indexOf('#') === -1) {
       currentChat.style.display = 'flex';
-      idContacts.style.display = 'none';
+      idChats.style.display = 'none';
 
       currentChat.style.height = '0';
       chatSidebar.style.flexBasis = '0';
@@ -70,7 +71,5 @@ window.onload = function () {
          chat.style.flexDirection = 'initial';
          currentChat.style.height = 'initial';
       }
-
-      console.log(hash);
    }
 };

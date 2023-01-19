@@ -45,16 +45,16 @@
    //    }
    // }
 
-   // #chats.chat-sidebar__content {
-   //    display: flex;
-   // }
+   #current-chat.chat-sidebar__content {
+      display: flex;
+   }
 
    .chat-content {
       justify-content: flex-start;
       align-items: flex-start;
    }
 
-   [href="#current-chat"] {
-      display: none;
-   }
+   // [href="#current-chat"] {
+   //    display: none;
+   // }
 }

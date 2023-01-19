@@ -99,7 +99,7 @@
   flex-direction: column;
 }
 
-#contacts.chat-sidebar__content {
+#chats.chat-sidebar__content {
   display: flex;
 }
 
@@ -134,12 +134,12 @@
   color: #6C757D;
   font-weight: normal;
 }
+#chat #current-chat.chat-sidebar__content {
+  display: flex;
+}
 #chat .chat-content {
   justify-content: flex-start;
   align-items: flex-start;
-}
-#chat [href="#current-chat"] {
-  display: none;
 }
 
 *,

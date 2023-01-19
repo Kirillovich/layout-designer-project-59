@@ -133,6 +133,12 @@
   color: #6C757D;
   font-weight: normal;
 }
+#chat .chat-sidebar__content:not(#chats) {
+  display: none;
+}
+#chat #chats.chat-sidebar__content {
+  display: flex;
+}
 #chat .chat-content {
   justify-content: flex-start;
   align-items: flex-start;

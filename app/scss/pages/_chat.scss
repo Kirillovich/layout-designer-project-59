@@ -35,6 +35,20 @@
       }
    }
 
+   .chat {
+      &-sidebar {
+         &__content {
+            &:not(#chats) {
+               display: none;
+            }
+         }
+      }
+   }
+
+   #chats.chat-sidebar__content {
+      display: flex;
+   }
+
    .chat-content {
       justify-content: flex-start;
       align-items: flex-start;

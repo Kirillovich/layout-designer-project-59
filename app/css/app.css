@@ -18,14 +18,14 @@
   background-color: rgba(239, 239, 239, 0.6) !important;
 }
 
-.chat {
+#index .chat {
   display: flex;
   background-color: #ffffff;
   border-radius: 16px;
   overflow: hidden;
   height: calc(100vh - 48px);
 }
-.chat-sidebar {
+#index .chat-sidebar {
   display: flex;
   flex-direction: column;
   flex-basis: 464px;
@@ -33,51 +33,52 @@
   flex-shrink: 0;
   border-right: 1px solid #EFEFEF;
 }
-.chat-sidebar__header {
+#index .chat-sidebar__header {
   background-color: #4545A5;
   padding: 16px 32px 16px 16px;
 }
-.chat-sidebar__content {
-  display: none;
+#index .chat-sidebar__content {
+  display: flex;
   flex-direction: column;
   overflow: hidden;
   padding: 48px 24px;
   height: 100%;
 }
-.chat-sidebar__contacts {
+#index .chat-sidebar__content:not(#contacts.chat-sidebar__content) {
+  display: none;
+}
+#index .chat-sidebar__contacts {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0 2px 3px;
   margin: 0 -2px;
 }
-.chat-content {
+#index .chat-content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
 }
-
-.welcome.profile {
+#index .welcome.profile {
   margin: 88px 0;
 }
-.welcome.profile .welcome__img {
+#index .welcome.profile .welcome__img {
   width: 90px;
   height: 90px;
   margin-bottom: 8px;
 }
-.welcome.profile .welcome__h4 {
+#index .welcome.profile .welcome__h4 {
   color: #212529;
   margin: 0 0 24px;
 }
-.welcome.profile .welcome__span {
+#index .welcome.profile .welcome__span {
   font-size: 16px;
   line-height: 24px;
 }
-
-.contacts {
+#index .contacts {
   margin: 0 16px;
 }
-.contacts__contact {
+#index .contacts__contact {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -87,14 +88,14 @@
   line-height: 21px;
   color: #212529;
 }
-.contacts__contact span {
+#index .contacts__contact span {
   color: rgba(0, 0, 0, 0.5);
 }
-.contacts__contact a {
+#index .contacts__contact a {
   text-decoration: none;
   color: #212529;
 }
-.contacts__contact div {
+#index .contacts__contact div {
   display: flex;
   flex-direction: column;
 }

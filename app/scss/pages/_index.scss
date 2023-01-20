@@ -1,102 +1,98 @@
-.chat {
-   display: flex;
-   background-color: #ffffff;
-   border-radius: 16px;
-   overflow: hidden;
-   height: calc(100vh - 48px);
-
-   &-sidebar {
+#index {
+   .chat {
       display: flex;
-      flex-direction: column;
-      flex-basis: 464px;
-      max-width: 464px;
-      flex-shrink: 0;
-      border-right: 1px solid $gray;
-
-      &__header {
-         background-color: $primary;
-         padding: 16px 32px 16px 16px;
-      }
-
-      &__content {
-         display: none;
-         flex-direction: column;
-         overflow: hidden;
-         padding: 48px 24px;
-         height: 100%;
-      }
-
-      &__contacts {
-         overflow-y: auto;
-         overflow-x: hidden;
-         padding: 0 2px 3px;
-         margin: 0 -2px;
-      }
-   }
-
-   &-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-grow: 1;
-   }
-}
-
-.welcome.profile {
-   margin: 88px 0;
-
-   .welcome__img {
-      width: 90px;
-      height: 90px;
-      margin-bottom: 8px;
-   }
-
-   .welcome__h4 {
-      color: #212529;
-      margin: 0 0 24px;
-   }
-
-   .welcome__span {
-      font-size: 16px;
-      line-height: 24px;
-   }
-}
-
-.contacts {
-   margin: 0 16px;
+      background-color: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      height: calc(100vh - 48px);
    
-   &__contact {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 8px 16px;
-      border-bottom: 1px solid $gray;
-      font-size: 14px;
-      line-height: 21px;
-      color: #212529;
-
-      span {
-         color: rgba(0 0 0 / 0.5);
-      }
-
-      a {
-         text-decoration: none;
-         color: #212529;
-      }
-
-      div {
+      &-sidebar {
          display: flex;
          flex-direction: column;
+         flex-basis: 464px;
+         max-width: 464px;
+         flex-shrink: 0;
+         border-right: 1px solid $gray;
+   
+         &__header {
+            background-color: $primary;
+            padding: 16px 32px 16px 16px;
+         }
+   
+         &__content {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 48px 24px;
+            height: 100%;
+
+            &:not(#contacts.chat-sidebar__content) {
+               display: none;
+            }
+         }
+   
+         &__contacts {
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 0 2px 3px;
+            margin: 0 -2px;
+         }
+      }
+   
+      &-content {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-grow: 1;
+      }
+   }
+   
+   .welcome.profile {
+      margin: 88px 0;
+   
+      .welcome__img {
+         width: 90px;
+         height: 90px;
+         margin-bottom: 8px;
+      }
+   
+      .welcome__h4 {
+         color: #212529;
+         margin: 0 0 24px;
+      }
+   
+      .welcome__span {
+         font-size: 16px;
+         line-height: 24px;
+      }
+   }
+   
+   .contacts {
+      margin: 0 16px;
+      
+      &__contact {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 8px 16px;
+         border-bottom: 1px solid $gray;
+         font-size: 14px;
+         line-height: 21px;
+         color: #212529;
+   
+         span {
+            color: rgba(0 0 0 / 0.5);
+         }
+   
+         a {
+            text-decoration: none;
+            color: #212529;
+         }
+   
+         div {
+            display: flex;
+            flex-direction: column;
+         }
       }
    }
 }
-
-// #chats.chat-sidebar__content {
-//    display: flex;
-// }
-
-// #index {
-//    #contacts.chat-sidebar__content {
-//       display: flex;
-//    }
-// }

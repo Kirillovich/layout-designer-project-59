@@ -5,9 +5,10 @@
 
    &__menu {
       display: flex;
+      flex-wrap: nowrap;
    }
 
-   &__btn {
+   &__li {
       display: flex;
       align-items: center;
       color: $light;
@@ -22,6 +23,20 @@
       img {
          display: inline-block;
          margin-right: 8px;
+      }
+   }
+
+   &__btn {
+      display: flex;
+      align-items: center;
+      border: none;
+      background: none;
+      color: $light;
+      padding: 0;
+
+      &:hover,
+      &:focus {
+         color: $light;
       }
    }
 }

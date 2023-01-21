@@ -35,26 +35,11 @@
       }
    }
 
-   // .chat {
-   //    &-sidebar {
-   //       &__content {
-   //          &:not(#chats) {
-   //             display: none;
-   //          }
-   //       }
-   //    }
-   // }
-
-   #current-chat.chat-sidebar__content {
-      display: flex;
-   }
-
-   .chat-content {
-      justify-content: flex-start;
-      align-items: flex-start;
-   }
-
-   [href="#current-chat"] {
-      display: none;
+   .header {
+      &__li {
+         &--chat {
+            display: none;
+         }
+      }
    }
 }

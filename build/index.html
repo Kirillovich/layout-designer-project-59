@@ -18,22 +18,22 @@
                <div class="chat-sidebar__header">
                   <div class="header">
                      <img src="img/icons/logo.svg" alt="Логотип" class="logo" />
-                     <ul class="nav header__menu">
-                        <li class="header__li"> 
+                     <div class="nav header__menu">
+                        <a href="#contacts" class="header__li"> 
                            <button class="nav-link active header__btn" id="contacts-tab" data-bs-target="#contacts" data-bs-toggle="tab"><img src="img/icons/people.svg" alt="Контакты" /> <span class="header__span">Контакты</span></button>
-                        </li>
-                        <li class="header__li"> 
+                        </a>
+                        <a href="#chats" class="header__li"> 
                            <button class="nav-link header__btn" id="chats-tab" data-bs-target="#chats" data-bs-toggle="tab"><img src="img/icons/chat.svg" alt="Сообщения" /> <span class="header__span">Сообщения</span></button>
-                        </li>
-                        <li class="header__li"> 
+                        </a>
+                        <a href="#profile" class="header__li"> 
                            <button class="nav-link header__btn" id="profile-tab" data-bs-target="#profile" data-bs-toggle="tab"><img src="img/icons/person.svg" alt="Профиль" /> <span class="header__span">Профиль</span></button>
-                        </li>
-                     </ul>
+                        </a>
+                     </div>
                   </div>
                </div>
 
                <div class="tab-content chat-sidebar__content-container">
-                  <div id="contacts" class="chat-sidebar__content tab-pane fade show active" aria-labelledby="contacts-tab" role="tabpanel">
+                  <div id="contacts" class="chat-sidebar__content tab-pane show active" aria-labelledby="contacts-tab" role="tabpanel">
                      <h1 class="h1">Контакты</h1>
                      <div class="search">
                         <input type="text" placeholder="Поиск по контактам" />
@@ -89,7 +89,7 @@
                      </div>
                   </div>
    
-                  <div id="chats" class="chat-sidebar__content tab-pane fade" aria-labelledby="chats-tab" role="tabpanel">
+                  <div id="chats" class="chat-sidebar__content tab-pane" aria-labelledby="chats-tab" role="tabpanel">
                      <h1 class="h1">Чаты</h1>
                      <div class="search">
                         <input type="text" placeholder="Поиск по cooбщениям" />
@@ -120,7 +120,7 @@
                      </div>
                   </div>
    
-                  <div id="profile" class="chat-sidebar__content tab-pane fade" aria-labelledby="profile-tab" role="tabpanel">
+                  <div id="profile" class="chat-sidebar__content tab-pane" aria-labelledby="profile-tab" role="tabpanel">
                      <h1 class="h1">Профиль</h1>
                      <div class="search">
                         <input type="text" placeholder="Поиск по cooбщениям" />
@@ -168,6 +168,6 @@
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="js/index.js"></script>
+      <!-- <script src="js/index.js"></script> -->
    </body>
 </html>

@@ -47,4 +47,19 @@
          }
       }
    }
+
+   #chat {
+      .dialog {
+         display: none;
+         padding: 0;
+      }
+   }
+}
+
+@media screen and (min-width: 1000px) {
+   #chat {
+      #current-chat {
+         display: none;
+      }
+   }
 }

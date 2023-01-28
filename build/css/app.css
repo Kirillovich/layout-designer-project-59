@@ -38,11 +38,15 @@
   padding: 16px 32px 16px 16px;
 }
 .chat-sidebar__content {
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   padding: 48px 24px;
   height: 100%;
+  flex-shrink: 0;
 }
 .chat-sidebar__content-container {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   overflow: hidden;
 }
@@ -97,11 +101,6 @@
   color: #212529;
 }
 .contacts__contact div {
-  display: flex;
-  flex-direction: column;
-}
-
-.tab-content > .active {
   display: flex;
   flex-direction: column;
 }
@@ -228,6 +227,9 @@ body {
 .header__li img {
   display: inline-block;
   margin-right: 8px;
+}
+.header__li a {
+  text-decoration: none;
 }
 .header__btn {
   display: flex;

@@ -38,7 +38,7 @@
   padding: 16px 32px 16px 16px;
 }
 .chat-sidebar__content {
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 48px 24px;
   height: 100%;

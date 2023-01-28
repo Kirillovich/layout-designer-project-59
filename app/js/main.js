@@ -10,20 +10,19 @@ window.onload = function () {
    const pathname = location.pathname;
    const contentBlock = hash === '' ? '' : document.querySelector(hash);
 
-   // && pathname === '/'
-   if (hash) {
+   if (hash && pathname === '/') {
       contentBlock.style.order = '-1';
       contentBlock.style.display = 'flex';
    } else {
       contacts.style.display = 'flex';
    }
 
-   // if (hash && pathname !== '/') {
-   //    contentBlock.style.order = '-1';
-   //    contentBlock.style.display = 'flex';
-   // } else {
-   //    chats.style.display = 'flex';
-   // }
+   if (hash && pathname !== '/') {
+      contentBlock.style.order = '-1';
+      contentBlock.style.display = 'flex';
+   } else {
+      chats.style.display = 'flex';
+   }
 
    for (elem of linksMenu) {
       elem.addEventListener('click', function() {

@@ -1,6 +1,6 @@
 window.onload = function () {
    const windowWidth = document.documentElement.clientWidth;
-   const currentTab = document.querySelector('button#current-tab');
+   const currentTab = document.querySelector('a#current-tab');
    const chatSidebarContentContainer = document.querySelector('.chat-sidebar__content-container');
    const chat = document.querySelector('.chat');
    const chatSidebar = document.querySelector('.chat-sidebar');

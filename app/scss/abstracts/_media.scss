@@ -53,6 +53,10 @@
       .dialog {
          display: none;
          padding: 0;
+
+         &__header {
+            margin-right: 0;
+         }
       }
 
       .message {
@@ -61,6 +65,9 @@
          }
          &__content {
             margin: 0;
+         }
+         &__text {
+            font-size: 15.5px;
          }
       }
 

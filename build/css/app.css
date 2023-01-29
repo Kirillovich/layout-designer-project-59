@@ -493,11 +493,17 @@ body {
     display: none;
     padding: 0;
   }
+  #chat .dialog__header {
+    margin-right: 0;
+  }
   #chat .message__avatar {
     display: none;
   }
   #chat .message__content {
     margin: 0;
+  }
+  #chat .message__text {
+    font-size: 15.5px;
   }
   #chat .typing {
     margin: 0;

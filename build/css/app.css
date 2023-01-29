@@ -511,10 +511,6 @@ body {
   }
   #chat .message__content {
     margin: 0;
-    padding: 23px;
-  }
-  #chat .message__text {
-    font-size: 15px;
   }
   #chat .message + .message {
     margin-top: 15px;

@@ -487,6 +487,14 @@ body {
   #chat .chat-sidebar__content-container {
     flex-grow: 1;
   }
+  #index .mobile,
+  #chat .mobile {
+    display: block;
+  }
+  #index .no-mobile,
+  #chat .no-mobile {
+    display: none;
+  }
   #index .chat-content {
     display: none;
   }
@@ -503,6 +511,9 @@ body {
   }
   #chat .message__content {
     margin: 0;
+  }
+  #chat .message__text {
+    font-size: 15px;
   }
   #chat .message + .message {
     margin-top: 15px;
@@ -523,6 +534,9 @@ body {
 }
 @media screen and (min-width: 1000px) {
   #chat #current-chat {
+    display: none;
+  }
+  .mobile {
     display: none;
   }
 }

@@ -39,6 +39,14 @@
             }
          }
       }
+
+      .mobile {
+         display: block;
+      }
+
+      .no-mobile {
+         display: none;
+      }
    }
 
    #index {
@@ -68,7 +76,7 @@
             margin: 0;
          }
          &__text {
-            // font-size: 15px;
+            font-size: 15px;
          }
 
          & + .message {
@@ -99,5 +107,9 @@
       #current-chat {
          display: none;
       }
+   }
+
+   .mobile {
+      display: none;
    }
 }

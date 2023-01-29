@@ -504,7 +504,7 @@ body {
   }
   #chat .dialog__header {
     margin-right: 0;
-    padding: 21px 0 21px 16px;
+    padding: 21px 0 22px 16px;
   }
   #chat .message__avatar {
     display: none;

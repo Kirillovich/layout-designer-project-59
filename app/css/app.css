@@ -167,7 +167,6 @@
 }
 
 body {
-  font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   color: #6C757D;
@@ -519,9 +518,6 @@ body {
   #chat .message__name {
     letter-spacing: 0.4px;
     line-height: 24px;
-  }
-  #chat .message__text {
-    letter-spacing: -0.2px;
   }
   #chat .message + .message {
     margin-top: 15px;

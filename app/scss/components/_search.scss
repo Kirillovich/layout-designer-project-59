@@ -1,0 +1,16 @@
+.search {
+   border-bottom: 1px solid $gray;
+
+   input {
+      width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+      color: $secondary;
+      border: 0;
+      padding: 24px;
+
+      &:focus {
+         outline: none;
+      }
+   }
+}

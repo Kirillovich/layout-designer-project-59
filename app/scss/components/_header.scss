@@ -1,0 +1,46 @@
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   &__menu {
+      display: flex;
+      flex-wrap: nowrap;
+   }
+
+   &__li {
+      display: flex;
+      align-items: center;
+      color: $light;
+      font-size: 14px;
+      line-height: 21px;
+      text-decoration: none;
+
+      &:not(:last-child) {
+         margin-right: 32px;
+      }
+
+      img {
+         display: inline-block;
+         margin-right: 8px;
+      }
+
+      a {
+         text-decoration: none;
+      }
+   }
+
+   &__btn {
+      display: flex;
+      align-items: center;
+      border: none;
+      background: none;
+      color: $light;
+      padding: 0;
+
+      &:hover,
+      &:focus {
+         color: $light;
+      }
+   }
+}

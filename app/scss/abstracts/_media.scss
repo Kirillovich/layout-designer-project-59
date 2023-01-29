@@ -75,7 +75,6 @@
          &__content {
             margin: 0;
             padding: 24px 24px 23px;
-            box-shadow: none;
          }
          &__text {
             font-size: 15px;
@@ -102,12 +101,12 @@
          }
       }
 
-      #current-chat .h4 {
-         letter-spacing: 0.4px;
-         span {
-            letter-spacing: normal;
-         }
-      }
+      // #current-chat .h4 {
+      //    letter-spacing: 0.4px;
+      //    span {
+      //       letter-spacing: normal;
+      //    }
+      // }
    }
 }
 

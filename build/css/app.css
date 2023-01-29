@@ -126,14 +126,13 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  margin-right: 24px;
 }
 #chat .dialog__name {
-  display: flex;
-  flex-direction: column;
   color: #343A40;
-  margin-left: 24px;
+  font-weight: bold;
 }
-#chat .dialog__name span {
+#chat .dialog__span {
   font-size: 14px;
   line-height: 21px;
   color: #6C757D;
@@ -512,7 +511,6 @@ body {
   #chat .message__content {
     margin: 0;
     padding: 24px 24px 23px;
-    box-shadow: none;
   }
   #chat .message__text {
     font-size: 15px;
@@ -532,12 +530,6 @@ body {
   #chat .typing__send img {
     width: 42px;
     height: 42px;
-  }
-  #chat #current-chat .h4 {
-    letter-spacing: 0.4px;
-  }
-  #chat #current-chat .h4 span {
-    letter-spacing: normal;
   }
 }
 @media screen and (min-width: 1000px) {

@@ -66,6 +66,18 @@
 
       .typing {
          margin: 0;
+
+         &__textarea {
+            padding: 23px 99px 0 24px;
+         }
+
+         &__send {
+            right: 16px;
+            img {
+               width: 42px;
+               height: 42px;
+            }
+         }
       }
    }
 }

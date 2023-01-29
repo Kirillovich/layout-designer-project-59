@@ -502,6 +502,16 @@ body {
   #chat .typing {
     margin: 0;
   }
+  #chat .typing__textarea {
+    padding: 23px 99px 0 24px;
+  }
+  #chat .typing__send {
+    right: 16px;
+  }
+  #chat .typing__send img {
+    width: 42px;
+    height: 42px;
+  }
 }
 @media screen and (min-width: 1000px) {
   #chat #current-chat {

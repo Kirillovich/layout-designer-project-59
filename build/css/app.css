@@ -508,6 +508,7 @@ body {
   }
   #chat .dialog__name {
     letter-spacing: 0.4px;
+    line-height: 24px;
   }
   #chat .message__avatar {
     display: none;
@@ -518,9 +519,7 @@ body {
   }
   #chat .message__name {
     letter-spacing: 0.4px;
-  }
-  #chat .message__text {
-    font-size: 15px;
+    line-height: 24px;
   }
   #chat .message + .message {
     margin-top: 15px;

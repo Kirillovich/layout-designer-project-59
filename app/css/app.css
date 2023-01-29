@@ -529,7 +529,7 @@ body {
     height: 42px;
   }
   #chat #current-chat .h4 {
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
   }
 }
 @media screen and (min-width: 1000px) {

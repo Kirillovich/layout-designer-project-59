@@ -28,6 +28,7 @@
          &-sidebar {
             max-width: 100%;
             flex-basis: 100%;
+            border: none;
 
             &__header {
                order: 1;
@@ -35,6 +36,12 @@
 
             &__content-container {
                flex-grow: 1;
+            }
+
+            &__contacts {
+               &--chats {
+                  margin-top: 48px;
+               }
             }
          }
       }
@@ -52,6 +59,16 @@
       .dialog {
          display: none;
          padding: 0;
+      }
+
+      .message {
+         &__avatar {
+            display: none;
+         }
+      }
+
+      .typing {
+         margin: 0;
       }
    }
 }

@@ -473,6 +473,7 @@ body {
   #chat .chat-sidebar {
     max-width: 100%;
     flex-basis: 100%;
+    border: none;
   }
   #index .chat-sidebar__header,
   #chat .chat-sidebar__header {
@@ -482,12 +483,22 @@ body {
   #chat .chat-sidebar__content-container {
     flex-grow: 1;
   }
+  #index .chat-sidebar__contacts--chats,
+  #chat .chat-sidebar__contacts--chats {
+    margin-top: 48px;
+  }
   #index .chat-content {
     display: none;
   }
   #chat .dialog {
     display: none;
     padding: 0;
+  }
+  #chat .message__avatar {
+    display: none;
+  }
+  #chat .typing {
+    margin: 0;
   }
 }
 @media screen and (min-width: 1000px) {

@@ -103,6 +103,9 @@
 
       #current-chat .h4 {
          letter-spacing: 0.4px;
+         span {
+            letter-spacing: normal;
+         }
       }
    }
 }

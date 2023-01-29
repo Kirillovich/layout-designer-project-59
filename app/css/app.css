@@ -535,6 +535,9 @@ body {
   #chat #current-chat .h4 {
     letter-spacing: 0.4px;
   }
+  #chat #current-chat .h4 span {
+    letter-spacing: normal;
+  }
 }
 @media screen and (min-width: 1000px) {
   #chat #current-chat {

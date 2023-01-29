@@ -1,5 +1,4 @@
 @media (max-width: 1000px) {
-
   #index,
   #chat {
     .h1 {
@@ -88,7 +87,7 @@
         line-height: 24px;
       }
 
-      &+.message {
+      & + .message {
         margin-top: 15px;
       }
 

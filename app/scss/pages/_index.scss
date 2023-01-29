@@ -1,6 +1,6 @@
 .chat {
   display: flex;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 16px;
   overflow: hidden;
   height: calc(100vh - 48px);
@@ -55,19 +55,21 @@
 
 .welcome.profile {
   margin: 88px 0;
+}
 
-  .welcome__img {
+.welcome {
+  &__img {
     width: 90px;
     height: 90px;
     margin-bottom: 8px;
   }
 
-  .welcome__h4 {
+  &__h4 {
     color: #212529;
     margin: 0 0 24px;
   }
 
-  .welcome__span {
+  &__span {
     font-size: 16px;
     line-height: 24px;
   }

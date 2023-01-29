@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   padding: 21px 40px 21px 16px;
-  box-shadow: 0px 2px 2px 0px #00000014;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
   transition: all 0.25s ease;
 
-  &+.preview-message {
+  & + .preview-message {
     margin-top: 14px;
   }
 

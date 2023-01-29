@@ -56,6 +56,7 @@
 
          &__header {
             margin-right: 0;
+            padding: 21px 0 21px 16px;
          }
       }
 
@@ -68,6 +69,10 @@
          }
          &__text {
             font-size: 15px;
+         }
+
+         & + .message {
+            margin-top: 15px;
          }
       }
 

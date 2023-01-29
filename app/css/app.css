@@ -118,7 +118,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid #EFEFEF;
-  padding: 22px 0 22px 16px;
+  padding: 22px 0 21px 16px;
   margin-right: 23px;
 }
 #chat .dialog__avatar {
@@ -406,6 +406,7 @@ body {
 }
 .message__text {
   line-height: 24px;
+  font-size: 15.5px;
 }
 .message__date {
   font-size: 14px;
@@ -437,7 +438,7 @@ body {
 .typing__send {
   position: absolute;
   top: 50%;
-  right: 24px;
+  right: 10px;
   transform: translateY(-50%);
   border: none;
   background: none;
@@ -495,6 +496,7 @@ body {
   }
   #chat .dialog__header {
     margin-right: 0;
+    padding: 21px 0 21px 16px;
   }
   #chat .message__avatar {
     display: none;
@@ -504,6 +506,9 @@ body {
   }
   #chat .message__text {
     font-size: 15px;
+  }
+  #chat .message + .message {
+    margin-top: 15px;
   }
   #chat .typing {
     margin: 0;

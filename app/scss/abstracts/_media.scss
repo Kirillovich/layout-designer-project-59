@@ -66,6 +66,10 @@
             margin-right: 0;
             padding: 21px 0 22px 16px;
          }
+
+         &__name {
+            letter-spacing: 0.4px;
+         }
       }
 
       .message {
@@ -76,8 +80,11 @@
             margin: 0;
             padding: 24px 24px 23px;
          }
+         &__name {
+            letter-spacing: 0.4px;
+         }
          &__text {
-            // font-size: 15px;
+            font-size: 15px;
          }
 
          & + .message {

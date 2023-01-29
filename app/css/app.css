@@ -506,12 +506,21 @@ body {
     margin-right: 0;
     padding: 21px 0 22px 16px;
   }
+  #chat .dialog__name {
+    letter-spacing: 0.4px;
+  }
   #chat .message__avatar {
     display: none;
   }
   #chat .message__content {
     margin: 0;
     padding: 24px 24px 23px;
+  }
+  #chat .message__name {
+    letter-spacing: 0.4px;
+  }
+  #chat .message__text {
+    font-size: 15px;
   }
   #chat .message + .message {
     margin-top: 15px;

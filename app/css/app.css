@@ -528,7 +528,7 @@ body {
     width: 42px;
     height: 42px;
   }
-  #chat .h4 {
+  #chat #current-chat .h4 {
     letter-spacing: 0.5px;
   }
 }

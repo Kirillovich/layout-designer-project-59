@@ -538,6 +538,9 @@ body {
   #chat #current-chat .h4 span {
     letter-spacing: normal;
   }
+  .bg-gray-60 {
+    background-color: #EFEFEF !important;
+  }
 }
 @media screen and (min-width: 1000px) {
   #chat #current-chat {

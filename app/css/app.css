@@ -512,6 +512,7 @@ body {
   #chat .message__content {
     margin: 0;
     padding: 24px 24px 23px;
+    box-shadow: none;
   }
   #chat .message__text {
     font-size: 15px;
@@ -537,9 +538,6 @@ body {
   }
   #chat #current-chat .h4 span {
     letter-spacing: normal;
-  }
-  .bg-gray-60 {
-    background-color: #EFEFEF !important;
   }
 }
 @media screen and (min-width: 1000px) {

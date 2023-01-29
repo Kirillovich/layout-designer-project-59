@@ -167,7 +167,6 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   font-weight: normal;
   color: #6C757D;
 }
@@ -505,7 +504,6 @@ body {
     padding: 21px 0 22px 16px;
   }
   #chat .dialog__name {
-    letter-spacing: 0.4px;
     line-height: 24px;
   }
   #chat .message__avatar {
@@ -513,7 +511,6 @@ body {
   }
   #chat .message__content {
     margin: 0;
-    padding: 24px 24px 23px;
   }
   #chat .message__name {
     letter-spacing: 0.4px;
@@ -521,6 +518,9 @@ body {
   }
   #chat .message + .message {
     margin-top: 15px;
+  }
+  #chat .message .line {
+    margin: 8px 0 4px;
   }
   #chat .typing {
     margin: 0;

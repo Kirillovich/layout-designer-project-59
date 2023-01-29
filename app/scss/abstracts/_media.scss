@@ -68,7 +68,7 @@
          }
 
          &__name {
-            letter-spacing: 0.4px;
+            // letter-spacing: 0.4px;
             line-height: 24px;
          }
       }
@@ -79,7 +79,7 @@
          }
          &__content {
             margin: 0;
-            padding: 24px 24px 23px;
+            // padding: 24px 24px 23px;
          }
          &__name {
             letter-spacing: 0.4px;
@@ -91,6 +91,10 @@
 
          & + .message {
             margin-top: 15px;
+         }
+
+         & .line {
+            margin: 8px 0 4px;
          }
       }
 

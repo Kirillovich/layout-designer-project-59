@@ -37,12 +37,6 @@
             &__content-container {
                flex-grow: 1;
             }
-
-            &__contacts {
-               &--chats {
-                  margin-top: 48px;
-               }
-            }
          }
       }
    }
@@ -64,6 +58,9 @@
       .message {
          &__avatar {
             display: none;
+         }
+         &__content {
+            margin: 0;
          }
       }
 

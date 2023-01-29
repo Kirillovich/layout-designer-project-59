@@ -1,60 +1,60 @@
 .preview-message {
-   display: flex;
-   align-items: center;
-   padding: 21px 40px 21px 16px;
-   box-shadow: 0px 2px 2px 0px #00000014;
-   transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  padding: 21px 40px 21px 16px;
+  box-shadow: 0px 2px 2px 0px #00000014;
+  transition: all 0.25s ease;
 
-   & + .preview-message {
-      margin-top: 14px;
-   }
+  &+.preview-message {
+    margin-top: 14px;
+  }
 
-   &__avatar {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      margin-right: 24px;
-   }
+  &__avatar {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 24px;
+  }
 
-   &__content {
-      width: 100%;
-      overflow: hidden;
-   }
+  &__content {
+    width: 100%;
+    overflow: hidden;
+  }
 
-   &__time {
-      font-size: 14px;
-      line-height: 21px;
-      color: #ADB5BD;
-      font-weight: normal;
-      margin-left: auto;
-   }
+  &__time {
+    font-size: 14px;
+    line-height: 21px;
+    color: #adb5bd;
+    font-weight: normal;
+    margin-left: auto;
+  }
 
-   &__status {
-      font-size: 14px;
-      line-height: 21px;
-      color: $secondary;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      display: block;
-   }
+  &__status {
+    font-size: 14px;
+    line-height: 21px;
+    color: $secondary;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+  }
 
-   .h4 {
-      display: flex;
-   }
+  .h4 {
+    display: flex;
+  }
 
-   &:hover {
-      cursor: pointer;
-      background-color: $primary;
-      transition: all 0.25s ease;
-   }
+  &:hover {
+    cursor: pointer;
+    background-color: $primary;
+    transition: all 0.25s ease;
+  }
 
-   &:hover &__status {
-      color: $gray;
-   }
+  &:hover &__status {
+    color: $gray;
+  }
 
-   &:hover .h4 {
-      color: $light;
-   }
+  &:hover .h4 {
+    color: $light;
+  }
 }

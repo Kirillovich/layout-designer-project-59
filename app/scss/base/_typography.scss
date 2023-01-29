@@ -1,61 +1,61 @@
 *,
 *::after,
 *::before {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ::placeholder {
-   font-size: 16px;
-   color: $secondary;
-   line-height: 24px;
+  font-size: 16px;
+  color: $secondary;
+  line-height: 24px;
 }
 
 ::-webkit-input-placeholder {
-   font-size: 16px;
-   color: $secondary;
-   line-height: 24px;
+  font-size: 16px;
+  color: $secondary;
+  line-height: 24px;
 }
 
 ::-webkit-scrollbar {
-   display: none;
+  display: none;
 }
 
 body {
-   font-weight: normal;
-   color: $secondary;
+  font-weight: normal;
+  color: $secondary;
 }
 
 .wrapper {
-   max-width: 1440px;
-   margin: 0 auto;
-   background-color: $gray;
-   padding: 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $gray;
+  padding: 24px;
 }
 
 .h1 {
-   font-size: 32px;
-   line-height: 38.4px;
-   font-weight: bold;
-   color: #212529;
-   margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 38.4px;
+  font-weight: bold;
+  color: #212529;
+  margin-bottom: 24px;
 }
 
 .h4 {
-   font-size: 16px;
-   font-weight: bold;
-   line-height: 24px;
-   color: #212529;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #212529;
 }
 
 .letter {
-   line-height: 24px;
-   color: $secondary;
-   margin: 48px 0 16px;
+  line-height: 24px;
+  color: $secondary;
+  margin: 48px 0 16px;
 }
 
 .line {
-   height: 1px;
-   background-color: $gray;
+  height: 1px;
+  background-color: $gray;
 }
